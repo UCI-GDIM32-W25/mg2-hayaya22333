@@ -2,6 +2,7 @@
 # HW2
 ## Devlog
 On top of my original planned objects (player, camera, ground, coin *prefab, coin spawner, UI), I also added a coin destroyer object to despawn the coins once the leave the screen without being collected by the player. I used old knowledge learned from MG1 (access public method to update UI with the current number of coins) in public void UpdatePointText(int _point), where the function is called in Player.cs every time it collides with a coin, and uses the stored coin number for _point parameter. 
+
 [itch.io web build link](https://hayaya22333.itch.io/mg2)
 
 ## Open-Source Assets
