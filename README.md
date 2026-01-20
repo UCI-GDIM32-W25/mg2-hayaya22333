@@ -1,7 +1,7 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/7qg5CCgx)
 # HW2
 ## Devlog
-On top of my original planned objects (player, camera, ground, coin *prefab, coin spawner, UI), I also added a coin destroyer object to despawn the coins once it leaves the screen without being collected by the player. I used old knowledge learned from MG1 (access public method to update UI with the current number of coins) in public void UpdatePointText(int _point), where the function is called in Player.cs every time it collides with a coin, and uses the stored coin number for _point parameter. 
+On top of my original planned objects (player, camera, ground, coin *prefab, coin spawner, UI), I also added a coin destroyer object to despawn the coins once it leaves the screen without being collected by the player. I used old knowledge learned from MG1 (access public method to update UI with the current number of coins) in public void UpdatePointText(int _point), where the function is called in Player.cs every time it collides with a coin, and uses the stored coin number for _point parameter. A new built-in method used for spawning coins at irregular intervals is Random.Range(float min, float max). I used 0.1f for minimum interval to ensure there's no visually overlapping coins, and 2f as maximum to controll the max amount of time for there to be no coins spawned on screen.
 
 [itch.io web build link](https://hayaya22333.itch.io/mg2)
 
